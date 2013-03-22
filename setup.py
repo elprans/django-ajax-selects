@@ -14,7 +14,7 @@ setup(name='django-ajax-selects',
     author_email='crucialfelix@gmail.com',
     url='https://github.com/crucialfelix/django-ajax-selects/',
     packages=['ajax_select', ],
-    package_data={'ajax_select': ['*.py','*.txt','static/css/*','static/images/*','static/js/*','templates/*.html', 'templates/ajax_select/*.html']},
+    package_data={'ajax_select': ['*.py','*.txt','static/ajax_select/css/*','static/ajax_select/images/*','static/ajax_select/js/*','templates/*.html', 'templates/ajax_select/*.html']},
     classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 2",

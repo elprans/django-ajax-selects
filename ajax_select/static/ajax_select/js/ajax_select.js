@@ -5,13 +5,13 @@ if(typeof jQuery.fn.autocompletehtml != 'function') {
 
 $.fn.autocompletehtml = function() {
 	var $text = $(this), sizeul = true;
-	this.data("autocomplete")._renderItem = function _renderItemHTML(ul, item) {
+	this.data("ui-autocomplete")._renderItem = function _renderItemHTML(ul, item) {
 		if(sizeul) {
 			if(ul.css('max-width')=='none') ul.css('max-width',$text.outerWidth());
 			sizeul = false;
 		}
 		return $("<li></li>")
-			.data("item.autocomplete", item)
+			.data("ui-autocomplete-item", item)
 			.append("<a>" + item.match + "</a>")
 			.appendTo(ul);
 	};
